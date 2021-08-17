@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background: rgb(193, 214, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    margin: 50px;
+    min-height: 200px;
+    max-height: 900px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,1);
+    
+}
+/* -------------------- math ------------------*/
+.container .math{
+    position: relative;
+    background: rgb(228, 238, 234);
+    padding: 40px;
+}
+.heading
+    {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        font-size: 18px;
+        border-bottom: 5px solid rgba(207, 14, 14, 0.2);
+}
+.heading .heading-text{
+    color: #13241b;
+}
+.math-formulas p{
+    color: rgba(165, 7, 7, 0.781);
+    font-size: 1.3em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5em;
+    cursor: pointer;
+}
+.math-formulas abbr{
+    text-decoration: none;
+}
+.chemistry-formulas p{
+    color: rgba(23, 40, 190, 0.753);
+    font-size: 1.3em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5em;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*------------------------- chemistry------------------ */
+
+
+
+
+
+
+
+
+
+
+.container .chemistry{
+    position: relative;
+    background: #99eec4;
+    padding: 40px;
+    
+}
+.heading2
+    {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        font-size: 18px;
+        border-bottom: 5px solid rgba(207, 14, 14, 0.2);
+    }
+.heading2 .heading-text{
+    color: #11472a;
+}
+.chemistry-formulas p{
+    color: rgba(115, 7, 165, 0.781);
+    font-size: 1.3em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5em;
+    cursor: pointer;
+}
+.chemistry-formulas abbr{
+    text-decoration: none;
+}
+.chemistry-formulas p{
+    color: rgba(11, 17, 68, 0.753);
+    font-size: 1.3em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5em;
+    cursor: pointer;
+}
+
+
+@media (max-width: 900px) {
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container .math{
+        position: relative;
+        background: rgb(228, 238, 234);
+        padding: 20px;
+    }
+    .heading
+        {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            font-size: 14px;
+            border-bottom: 5px solid rgba(207, 14, 14, 0.2);
+    }
+
+    .container .chemistry{
+        position: relative;
+        background: #99eec4;
+        padding: 40px;
+        
+    }
+    .heading2
+        {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            font-size: 14px;
+            border-bottom: 5px solid rgba(207, 14, 14, 0.2);
+        }
+}
+
+
+
+@media (max-width: 600px) {
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container .math{
+        position: relative;
+        background: rgb(228, 238, 234);
+        padding: 20px;
+    }
+    .heading
+        {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            font-size: 10px;
+            border-bottom: 5px solid rgba(207, 14, 14, 0.2);
+    }
+
+    .container .chemistry{
+        position: relative;
+        background: #99eec4;
+        padding: 40px;
+        
+    }
+    .heading2
+        {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            font-size: 10px;
+            border-bottom: 5px solid rgba(207, 14, 14, 0.2);
+        }
+}
+@media (max-width: 600px) {
+    .heading2{
+        font-size:6px;
+    }
+    .heading{
+        font-size: 6px;
+    }
+    abbr{
+        font-size: 9px;
+        font-weight: 600;
+    }
+    .chemistry-formulas p{
+        line-height: 2px;
+    }
+    .math-formulas p{
+        line-height: 2px;
+    }
+}
